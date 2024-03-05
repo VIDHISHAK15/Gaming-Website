@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="web.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header"> 
+        <!-- <a href="#" class="social-link"> -->
+        <div class="header-top">
+        <!-- <div class="container"> -->
+
+        <!-- <ul class="social-list"> -->
+
+        <!-- <li>
+              <a href="#" class="social-link"> 
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul> 
+
+        </div>
+
+      </div>-->
+        <!-- </div> -->
+
+        <div class="header-bottom skewBg" data-header>
+            <div class="container">
+
+                <a href="#" class="logo">Riders Republic</a>
+
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-list">
+
+                        <div class="navbar-item">
+                            <a href="#home" class="navbar-link skewBg" data-nav-link>About</a>
+                        </div>
+
+                        <div class="navbar-item">
+                            <a href="#features" class="navbar-link skewBg" data-nav-link>Media</a>
+                        </div>
+
+                        <div class="navbar-item">
+                            <a href="#shop" class="navbar-link skewBg" data-nav-link>Purchase</a>
+                        </div>
+
+                        <div class="navbar-item">
+                            <a href="#blog" class="navbar-link skewBg" data-nav-link>News</a>
+                        </div>
+
+                        <div class="navbar-item">
+                            <a href="#" class="navbar-link skewBg" data-nav-link>Contact Us</a>
+                        </div>
+
+                    </div>
+
+                </nav>
+                <div class="header-actions">
+
+                    <button class="cart-btn" aria-label="cart">
+                        <a href="#cart" class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping" style="color: #000205;">
+                            </i>
+                        </a>
+
+                        <span class="cart-badge">0</span>
+                    </button>
+
+
+                    <button class="search-btn" aria-label="search-icon">
+                        <a href="search-icon" class="search-icon" id="searchIcon">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #00040a;"></i>
+                            <div class="search-container"> 
+                            <input type="text" id="searchBox" placeholder="Search..."></div>
+                        </a>
+                    </button>
+
+
+                    <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                        <ion-icon name="menu-outline" class="menu"></ion-icon>
+                        <ion-icon name="close-outline" class="close"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- 
+    - #SEARCH BOX
+  -->
+
+    <div class="search-container" data-search-box>
+
+    <div class="input-wrapper">
+      <input type="search" name="search" aria-label="search" placeholder="Search here..." class="search-field">
+
+      <button class="search-submit" aria-label="submit search" data-search-toggler>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+
+      <button class="search-close" aria-label="close search" data-search-toggler></button>
+    </div>
+
+  </div>
+  <main>
+    <article>
+
+
+    <!-- 
+        - #HERO
+      -->
+
+    <section class="section" id="home" aria-label="home">
+        <video autoplay loop muted>
+            <source src="./photo/Riders Republic Cinematic Premiere  Ubisoft Forward 2020  Ubisoft [NA].mp4"
+                type="video/mp4">
+            <!-- Add additional source elements for other video formats if needed -->
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <p class="hero-subtitle">World Gaming</p>
+
+            <h1 class="h1 hero-title">
+                Skateboarding <span class="span">Matches</span> 
+            </h1>
+
+            <p class="hero-text">
+                <!-- Find technology or people for digital projects in public sector and Find an individual specialist
+                develope
+                researcher. -->
+            </p>
+
+            <button class="primary-btn" style="font-size: 20px; " >Read More</button>
+
+        </div>
+
+        <!-- <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
+            <img src="./assets/images/hero-banner.png" width="700" height="700" alt="hero banner" class="w-100">
+          </figure> -->
+
+    </div>
+    </section>
+    <div class="section-wrapper">
+        <section class="About" aria-label="about us">
+            <h1 class="about-hero">
+             About Us
+            </h1>
+            <p class="text">
+                Introducing Skater Republic, the thrilling upcoming arcade game that puts you right in the heart of a dynamic skateboarding adventure! Explore expansive skateparks, bustling cityscapes, and renowned real-life locations for an immersive experience like no other. Featuring intuitive controls, a sophisticated trick system, and a compelling progression framework, players will find themselves immersed in a world where every achievement feels truly gratifying. Keep an eye out as we work diligently to bring this extraordinary gaming experience to life.
+            </p>
+        </section>
+    </div>
+    <div class="section-wrapper">
+
+        <!-- 
+          - #LATEST GAME
+        -->
+
+        <section class="section latest-game" aria-label="latest game">
+            <div class="container">
+                <p class="section-subtitle1">Latest Releases</p>
+               <h2 class="h2 section-title">Create & <span class="span"></span> </h2>
+                 
+                <ul class="has-scrollbar">
+
+                    <!-- <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="./photo/apps.65212.14501696194323418.5696fcf1-5727-45da-a94c-1fdd9ad791ae.jpeg" width="400" height="470" loading="lazy"
+                      alt="RiderRepublic" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge skewBg">Rider</a>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Riders <span class="span">Republic™</span></a>
+                    </h3>
+
+                    <p class="card-price">
+                      Entry Fee : <span class="span">Free</span>
+                    </p>
+
+                  </div>
+
+                </div>
+              </li> -->
+
+                    <div class="scrollbar-item">
+                        <div class="latest-game-card">
+
+                            <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                                <img src="./photo/image0_0.jpg" width="400" height="470" loading="lazy"
+                                    alt="Hunter Killer II" class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+
+                                <a href="#" class="card-badge skewBg">Adventure</a>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title"> Riders <span class="span"> II</span></a>
+                                </h3>
+
+                                <p class="card-price">
+                                    Entry Fee : <span class="span">$25.00</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="scrollbar-item">
+                        <div class="latest-game-card">
+
+                            <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                                <img src="./photo/image1_0 (1).jpg" width="400" height="470" loading="lazy"
+                                    alt="Cyberpunk Daily" class="img-cover">
+                            </figure>
+
+                            <div class="card-content">
+
+                                <a href="#" class="card-badge skewBg">Action</a>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Riders <span class="span">Republic™</span></a>
+                                </h3>
+
+                                <p class="card-price">
+                                    Entry Fee : <span class="span">$39.00</span>
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </ul>
+
+            </div>
+        </section>
+        <!-- 
+          - #LIVE MATCH
+        -->
+
+        <section class="section live-match" id="live" aria-label="live match">
+            <div class="container">
+
+                <h2 class="h2 section-title"> <span class="span">Watch Live Match</span>
+                </h2>
+
+                <figure class="live-match-banner img-holder" style="--width: 1000; --height: 470;">
+                     <img src="./photo/bg.jpg" loading="lazy" alt="Live Match Video">
+                
+
+                    <button class="play-btn" aria-label="play video">
+                        <i class="fa-solid fa-play" style="color: #00040a;"></i>
+                  <!-- <ion-icon name="play"></ion-icon> -->
+                </button>
+
+                </figure>
+                <div class="live-match-player">
+
+                    <figure class="player player-1 img-holder" style="--width: 406; --height: 277;">
+                        <img src="./photo/logo.png" width="406" height="277" loading="lazy" alt="tokyo eagle"
+                            class="w-100">
+                    </figure>
+
+                    <div class="live-match-detail">
+
+                        <p class="live-match-subtitle">Upcoming Live Matches</p>
+
+                        <time class="live-match-time" datetime="08:30">08:30 IST</time>
+
+                    </div>
+
+                    <figure class="player player-2 img-holder" style="--width: 400; --height: 305;">
+                        <img src="./photo/logo1.png" width="400" height="305" loading="lazy" alt="new york hunter7"
+                            class="w-100">
+                    </figure>
+
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- 
+        
+        - #FEATURED GAME
+      
+
+      <section class="section featured-game" id="features" aria-label="featured game">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            All Released <span class="span">Games</span>
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="./assets/images/featured-game-1.jpg" width="450" height="600" loading="lazy"
+                    alt="Just for Gamers" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      Just for <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="./assets/images/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Just for <span class="span">Gamers</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="./assets/images/featured-game-2.jpg" width="450" height="600" loading="lazy"
+                    alt="Need for Speed" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      Need for <span class="span">Speed</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 5, Xbox</span>
+                  </span>
+
+                </div>
+
+            </div>
+        </li><li class="scrollbar-item">
+            <div class="featured-game-card">
+
+              <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                <img src="./assets/images/featured-game-3.jpg" width="450" height="600" loading="lazy"
+                  alt="Egypt Hunting Gamers" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3">
+                  <a href="#" class="card-title" tabindex="-1">
+                    Egypt Hunting <span class="span">Gamers</span>
+                  </a>
+                </h3>
+
+                <span class="card-meta">
+                  <ion-icon name="notifications"></ion-icon>
+
+                  <span class="span">Playstation 5, Xbox</span>
+                </span>
+
+              </div>
+
+              <div class="card-content-overlay">
+
+                <img src="./assets/images/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                  class="card-icon">
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">
+                    Egypt Hunting <span class="span">Gamers</span>
+                  </a>
+                </h3>
+
+                <span class="card-meta">
+                  <ion-icon name="notifications"></ion-icon>
+
+                  <span class="span">Playstation 5, Xbox</span>
+                </span>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="featured-game-card">
+
+              <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                <img src="./assets/images/featured-game-4.jpg" width="450" height="600" loading="lazy"
+                  alt="Just for Gamers" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3">
+                  <a href="#" class="card-title" tabindex="-1">
+                    Just for <span class="span">Gamers</span>
+                  </a>
+                </h3>
+
+                <span class="card-meta">
+                  <ion-icon name="notifications"></ion-icon>
+
+                  <span class="span">Playstation 5, Xbox</span>
+                </span>
+
+              </div>
+
+              <div class="card-content-overlay">
+
+                <img src="./assets/images/featured-game-icon.png" width="36" height="61" loading="lazy" alt=""
+                  class="card-icon">
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">
+                    Just for <span class="span">Gamers</span>
+                  </a>
+                </h3>
+
+                <span class="card-meta">
+                  <ion-icon name="notifications"></ion-icon>
+
+                  <span class="span">Playstation 5, Xbox</span>
+                </span>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+ -->
+
+
+    <!-- 
+        - #SHOP
+      -->
+
+    <section class="section shop" id="shop" aria-label="shop" >
+    <!-- style="background-image: url('./photo/backg.jpg')"> -->
+        <div class="container">
+
+            <h2 class="h2 section-title">
+                Gaming Product <span class="span">Corner</span>
+            </h2>
+
+            <p class="section-text">
+                Bringing new customization and gear options for everyone
+            </p>
+
+            <div class="has-scrollbar">
+
+                <div class="scrollbar-item">
+                    <div class="shop-card">
+
+                        <figure class="card-banner img-holder" style="--width: 230; --height: 260;">
+                            <img src="./photo/tshirt.avif" width="300" height="260" loading="lazy"
+                                alt="Women Black T-Shirt" class="img-cover">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <a href="#" class="card-badge skewBg">T-shirt</a>
+
+                            <h3 class="h3">
+                                <a href="#" class="card-title">Cool Skate T-shirt 3D Cool Skateboard</a>
+                            </h3>
+
+                            <div class="card-wrapper">
+                                <p class="card-price">$29.00</p>
+
+                                <button class="card-btn">
+                                    <ion-icon name="basket"></ion-icon>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="scrollbar-item">
+                    <div class="shop-card">
+
+                        <figure class="card-banner img-holder" style="--width: 230; --height: 260;">
+                            <img src="./photo/skateboard.jpeg" width="300" height="260" loading="lazy"
+                                alt="Gears 5 Xbox Controller" class="img-cover">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <a href="#" class="card-badge skewBg">Skateboard</a>
+
+                            <h3 class="h3">
+                                <a href="#" class="card-title">Pro Skateoard skull z 750c</a>
+                            </h3>
+
+                            <div class="card-wrapper">
+                                <p class="card-price">$29.00</p>
+
+                                <button class="card-btn">
+                                    <ion-icon name="basket"></ion-icon>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="scrollbar-item">
+                    <div class="shop-card">
+
+                        <figure class="card-banner img-holder" style="--width: 230; --height: 260;">
+                            <img src="./photo/helmet.avif" width="200" height="230" loading="lazy"
+                                alt="GeForce RTX 2070" class="img-cover">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <a href="#" class="card-badge skewBg">Helmet</a>
+
+                            <h3 class="h3">
+                                <a href="#" class="card-title">Inline Skating Skateboarding Scootering Helmet MF500 -
+                                    Black</a>
+                            </h3>
+
+                            <div class="card-wrapper">
+                                <p class="card-price">$29.00</p>
+
+                                <button class="card-btn">
+                                    <ion-icon name="basket"></ion-icon>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="scrollbar-item">
+                    <div class="shop-card">
+
+                        <figure class="card-banner img-holder" style="--width: 230; --height: 260;">
+                            <img src="./photo/kids-8-12-years-skateboard-mid-500-bear.jpg" width="250" height="260"
+                                loading="lazy" alt="Virtual Reality Smiled" class="img-cover">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <a href="#" class="card-badge skewBg">Skateboard </a>
+
+                            <h3 class="h3">
+                                <a href="#" class="card-title">Skateboard Mid 500 Bear</a>
+                            </h3>
+
+                            <div class="card-wrapper">
+                                <p class="card-price">$29.00</p>
+
+                                <button class="card-btn">
+                                    <ion-icon name="basket"></ion-icon>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 
+        - #NEWSLETTER
+      -->
+
+    <section class="newsletter" aria-label="newsletter">
+        <div class="container">
+
+            <div class="newsletter-card">
+
+                <h2 class="h2">
+                    Our <span class="span">Newsletter</span>
+                </h2>
+
+                <form action="" class="newsletter-form">
+
+                    <div class="input-wrapper skewBg">
+                        <input type="email" name="email_address" aria-label="email" placeholder="Enter your email..."
+                            required class="email-field">
+
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    
+                        <button class="primary-btn" style="font-size: 20px;">Subscribe</button>
+
+                        <!-- <ion-icon name="paper-plane" aria-hidden="true"></ion-icon> -->
+                
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" style="background-color: var(--rich-black-fogra-29_95)">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">Riders Republic</a>
+
+                    <p class="footer-text">
+                        
+                    </p>
+
+                    <ul class="contact-list">
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <ion-icon name="location"></ion-icon>
+                            </div>
+
+                            <address class="item-text">
+                                Address : PO Box W75 Street LA
+                            </address>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <ion-icon name="headset"></ion-icon>
+                            </div>
+
+                            <a href="tel:+241245654235" class="item-text">Phone : +24 1245 654 235</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <ion-icon name="mail-open"></ion-icon>
+                            </div>
+
+                            <a href="mailto:info@exemple.com" class="item-text">Email : info@exemple.com</a>
+                        </div>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-list">
+
+                    <div>
+                        <p class="footer-list-title">Products</p>
+                    </div>
+
+                    <div>
+                        <a href="#" class="footer-link">Graphics</a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="footer-link">Backgrounds </a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="footer-link">Fonts </a>
+                    </div>
+                    <div>
+                        <a href="#" class="footer-link">Music </a>
+                    </div>
+
+                    <div>                
+                       <a href="#" class="footer-link">Photography </a>
+                    </div>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <div>
+                        <p class="footer-list-title">Need Help?</p>
+                    </div>
+
+                    <div>
+                        <a href="#" class="footer-link">Terms & Conditions</a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="footer-link">Refund Policy</a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="footer-link">Affiliate</a>
+                    </div>
+
+                    <div>
+                        <a href="#" class="footer-link">Use Cases</a>
+                    </div>
+
+                </ul>
+
+                <div class="footer-wrapper">
+
+                    <div class="social-wrapper">
+
+                        <p class="footer-list-title">Follow Us</p>
+
+                        <ul class="social-list">
+
+                            <div>
+                                <a href="#" class="social-link" style="background-color: #3b5998">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="#" class="social-link" style="background-color: #55acee">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="#" class="social-link" style="background-color: #d71e18">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="#" class="social-link" style="background-color: #1565c0">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </div>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-newsletter">
+
+                        <p class="footer-list-title">Newsletter Sign Up</p>
+
+                        <form action="" class="footer-newsletter">
+                            <input type="email" name="email_address" aria-label="email" placeholder="Enter your email"
+                                required class="email-field">
+
+                            <button type="submit" class="footer-btn" aria-label="submit">
+                                <ion-icon name="rocket"></ion-icon>
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2022 Gamics. All Right Reserved by <a href="#" class="copyright-link">Vidhisha Katariya</a>
+                </p>
+
+                <!-- <img src="./assets/images/footer-bottom-img.png" width="340" height="21" loading="lazy" alt=""
+            class="footer-bottom-img"> -->
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- 
+      - #BACK TO TOP
+    -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="caret-up"></ion-icon>
+    </a>
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
